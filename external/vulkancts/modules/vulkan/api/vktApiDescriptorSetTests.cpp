@@ -172,7 +172,7 @@ tcu::TestStatus descriptorSetLayoutLifetimeGraphicsTest (Context& context)
 		&vertexInputStateCreateInfo,						// const VkPipelineVertexInputStateCreateInfo*		pVertexInputState;
 		&inputAssemblyStateCreateInfo,						// const VkPipelineInputAssemblyStateCreateInfo*	pInputAssemblyState;
 		DE_NULL,											// const VkPipelineTessellationStateCreateInfo*		pTessellationState;
-		DE_NULL,											// const VkPipelineViewportStateCreateInfo*			pViewportState;
+		(const VkPipelineViewportStateCreateInfo*)1337ull,	// const VkPipelineViewportStateCreateInfo*			pViewportState;
 		&rasterizationStateCreateInfo,						// const VkPipelineRasterizationStateCreateInfo*	pRasterizationState;
 		DE_NULL,											// const VkPipelineMultisampleStateCreateInfo*		pMultisampleState;
 		DE_NULL,											// const VkPipelineDepthStencilStateCreateInfo*		pDepthStencilState;
